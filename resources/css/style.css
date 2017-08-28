@@ -1,0 +1,45 @@
+/*header code*/
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  height: 64px;
+  margin-left: 24px;
+  margin-right: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header a {
+  color: darkslategrey;
+  text-decoration: none;
+}
+
+.header .logoname {
+  height: 32px;
+  color: darkslategrey;
+}
+.header nav span{
+padding: 0px 8px;
+color: darkslategrey;
+
+
+}
+
+/*banner code*/
+.banner {
+  display: flex;
+}
+
+/*Info code*/
+
+/*Info side code*/
+
+/*Learning code*/
+
+/*thesis code*/
+
+/*footer code*/
