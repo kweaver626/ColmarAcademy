@@ -4,6 +4,11 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+.flexmain {
+  width: 100%;
+  margin: 0 auto;
+
+}
 
 .header {
   display: flex;
@@ -25,8 +30,6 @@ html {
 .header nav span{
 padding: 0px 8px;
 color: darkslategrey;
-
-
 }
 
 /*banner code*/
@@ -46,6 +49,7 @@ color: darkslategrey;
 .banner .content {
   display: block;
   align-items: center;
+  width: 30%;
 }
 .banner span {
   display: block;
@@ -56,6 +60,7 @@ color: darkslategrey;
   color: white;
   padding: 8px 0px;
   justify-content: center;
+  width: 50%;
 }
 
 
@@ -67,43 +72,77 @@ color: darkslategrey;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 32px 24px;
   width: 100%;
 }
 .practicing {
   display: inline-block;
   width: 60%;
+  background-color: pink;
+  align-content: flex-start;
+
+
 
 }
 .practicing img {
-  width: 60%;
-  height: inherit;
-  margin: 32px 24px;
+  width: 80%;
+  height: auto;
+  margin-left: 24px;
+
 }
+
+
+/*Info side code*/
 .infoside {
 display: flex;
 flex-direction: column;
 width: 40%;
-padding: 16px 16px;
+padding: 0px 32px;
+margin-top: 32px;
 }
 
+.contentdiv {
+  display:block;
+  padding-left: 16px;
+  align-content: center;
+  width: 65%;
+  padding-top: 32px;
+
+
+}
+.contentdiv .title {
+  color: charcoal;
+}
+.contentdiv p {
+  width: 90%;
+  font-size: .90rem;
+}
+
+.contentdiv .content{
+
+}
+.contentdiv a {
+  text-decoration: none;
+  color: darkslategrey;
+  font-size: .90rem;
+  font-weight: bold;
+}
 
 .infoside img {
 width: 35%;
-height: auto;
+height: 35%;
 display: inline-block;
+margin: 16px 16px;
 }
 
 .infoside .title {
   font-weight: bold;
-
 }
 .campus, .orientation, .guest {
   display: flex;
+  margin: 16px;
+  background-color: pink;
 }
-.test {
-  display: block;
-}
+
 
 .infoside .mobile {
   display: none;
@@ -113,11 +152,38 @@ display: inline-block;
   width: 40%;
 }
 
-/*Info side code*/
-
 /*Learning code*/
+.learning {
+  background-color: lightgrey;
+  width: 100%;
+}
+.learning h1 {
+  display: block;
+  justify-content: center;
+
+}
+.learning-block {
+  display: inline-block;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.learning-block img {
+
+}
 
 /*thesis code*/
+.thesis {
+  display: flex;
+  width: 100%;
+}
+.thesis h1 {
+  display: block;
+}
+
+.video-section {
+  width: 50%;
+  height: auto;
+}
 
 /*footer code*/
 
