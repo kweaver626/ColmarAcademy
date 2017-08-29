@@ -234,17 +234,24 @@ padding-left: 16px;
 
 /*thesis code*/
 .thesis {
-  display: flex;
+  display: block;
   width: 100%;
 }
 .thesis-title{
-  display: block;
+  display: flex;
   background-color: pink;
   width: 100%;
+  justify-content: center;
+}
+.thesis-content {
+  display: flex;
+  background-color: orange;
+
 }
 
 .video-section {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   width: 60%;
   height: auto;
   background-color: purple;
@@ -252,6 +259,14 @@ padding-left: 16px;
 .vid {
   width: 100%;
   object-fit: fill;
+}
+.vid-content {
+  width: 100%;
+  background-color: green;
+}
+.content-container {
+  display: inline-block;
+  background-color: white;
 }
 
 /*footer code*/
