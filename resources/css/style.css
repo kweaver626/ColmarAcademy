@@ -32,9 +32,86 @@ color: darkslategrey;
 /*banner code*/
 .banner {
   display: flex;
+  background-color: lightgrey;
+  align-items: center;
+  justify-content: flex-start;
 }
 
+.banner img{
+  width: 60%;
+  height: 50%;
+  margin: 32px 24px;
+
+}
+.banner .content {
+  display: block;
+  align-items: center;
+}
+.banner span {
+  display: block;
+}
+.banner .button {
+  display: flex;
+  background-color: darkslategray;
+  color: white;
+  padding: 8px 0px;
+  justify-content: center;
+}
+
+
+
+
+
 /*Info code*/
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 32px 24px;
+  width: 100%;
+}
+.practicing {
+  display: inline-block;
+  width: 60%;
+
+}
+.practicing img {
+  width: 60%;
+  height: inherit;
+  margin: 32px 24px;
+}
+.infoside {
+display: flex;
+flex-direction: column;
+width: 40%;
+padding: 16px 16px;
+}
+
+
+.infoside img {
+width: 35%;
+height: auto;
+display: inline-block;
+}
+
+.infoside .title {
+  font-weight: bold;
+
+}
+.campus, .orientation, .guest {
+  display: flex;
+}
+.test {
+  display: block;
+}
+
+.infoside .mobile {
+  display: none;
+}
+.content {
+  display: block;
+  width: 40%;
+}
 
 /*Info side code*/
 
@@ -43,3 +120,8 @@ color: darkslategrey;
 /*thesis code*/
 
 /*footer code*/
+
+
+@media only screen and (max-width: 768px){
+
+}
