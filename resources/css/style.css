@@ -23,9 +23,11 @@ html {
   text-decoration: none;
 }
 
-.header .logoname {
+.logoname {
+  display: flex;
   height: 32px;
   color: darkslategrey;
+  align-items: center;
 }
 .header nav span{
 padding: 0px 8px;
@@ -38,33 +40,49 @@ color: darkslategrey;
   background-color: lightgrey;
   align-items: center;
   justify-content: flex-start;
+  background-color: lightgrey;
 }
 
-.banner img{
+.banner .image{
+  display: flex;
   width: 60%;
-  height: 50%;
-  margin: 32px 24px;
+  height: 100%;
+  margin: 32px 0px 32px 24px;
+}
 
+.banner img {
+  width: 95%;
+  height: 60%;
 }
 .banner .content {
   display: block;
   align-items: center;
-  width: 30%;
+  width: 35%;
+  justify-content: center;
+}
+.banner .content h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 .banner span {
   display: block;
+  padding-bottom: 12px;
+  font-size: 1.5rem;
+  color: #343232;
 }
 .banner .button {
   display: flex;
-  background-color: darkslategray;
+  background-color: #4F4D4D;
   color: white;
   padding: 8px 0px;
   justify-content: center;
-  width: 50%;
+  width: 70%;
+  margin-top: 16px;
+  margin-left: 50px;
+  border-radius: 10px;
+
+
 }
-
-
-
 
 
 /*Info code*/
@@ -73,22 +91,22 @@ color: darkslategrey;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  height: 100%;
+  background-color: white;
+  margin: 32px 0px;
 }
 .practicing {
   display: inline-block;
   width: 60%;
-  background-color: pink;
-  align-content: flex-start;
-
+  height: 100%;
+  margin-left: 24px;
 
 
 }
 .practicing img {
-  width: 80%;
+  width: 100%;
   height: auto;
-  margin-left: 24px;
-
-}
+  }
 
 
 /*Info side code*/
@@ -96,8 +114,9 @@ color: darkslategrey;
 display: flex;
 flex-direction: column;
 width: 40%;
-padding: 0px 32px;
-margin-top: 32px;
+height: 100%;
+padding: 0px 0px 0px 24px;
+
 }
 
 .contentdiv {
@@ -105,16 +124,17 @@ margin-top: 32px;
   padding-left: 16px;
   align-content: center;
   width: 65%;
-  padding-top: 32px;
+  padding-top: 16px;
 
 
 }
 .contentdiv .title {
-  color: charcoal;
+
 }
 .contentdiv p {
-  width: 90%;
+  width: 100%;
   font-size: .90rem;
+  padding: 8px 0px;
 }
 
 .contentdiv .content{
@@ -127,11 +147,18 @@ margin-top: 32px;
   font-weight: bold;
 }
 
-.infoside img {
+.img {
 width: 35%;
-height: 35%;
 display: inline-block;
-margin: 16px 16px;
+margin: 0px 0px;
+padding-left: 16px;
+}
+.img img {
+  width: 100%;
+  height: auto;
+}
+.author {
+  font-size: .85rem;
 }
 
 .infoside .title {
@@ -139,10 +166,12 @@ margin: 16px 16px;
 }
 .campus, .orientation, .guest {
   display: flex;
-  margin: 16px;
-  background-color: pink;
-}
+  margin: 0px;
 
+  padding: 16px 0px 16px 0px;
+
+
+}
 
 .infoside .mobile {
   display: none;
@@ -154,20 +183,52 @@ margin: 16px 16px;
 
 /*Learning code*/
 .learning {
-  background-color: lightgrey;
-  width: 100%;
-}
-.learning h1 {
   display: block;
+  background-color: lightgrey;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+.learning-main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 72px;
   justify-content: center;
+}
+.heading {
+  justify-content: center;
+  padding: 32px 0px;
+  text-align: center;
+  background-color: orange;
 
 }
 .learning-block {
+  width: 28%;
   display: inline-block;
   flex-wrap: wrap;
+  margin: 32px 16px;
   background-color: white;
+
 }
-.learning-block img {
+.learning-block span {
+  margin-top: 16px;
+}
+.lbimg img{
+  width: 100%;
+  height: auto;
+
+}
+.lbcontent span {
+  font-weight: bold;
+}
+.lbcontent p {
+  font-size: .90rem;
+  width: 90%;
+}
+.lbcontent{
+  display: block;
+  padding: 16px 0px 24px 16px;
+  width: 100%;
 
 }
 
@@ -176,13 +237,21 @@ margin: 16px 16px;
   display: flex;
   width: 100%;
 }
-.thesis h1 {
+.thesis-title{
   display: block;
+  background-color: pink;
+  width: 100%;
 }
 
 .video-section {
-  width: 50%;
+  display: inline-block;
+  width: 60%;
   height: auto;
+  background-color: purple;
+}
+.vid {
+  width: 100%;
+  object-fit: fill;
 }
 
 /*footer code*/
