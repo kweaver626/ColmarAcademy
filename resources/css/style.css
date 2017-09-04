@@ -25,6 +25,8 @@ nav {
 }
 nav img{
   display: none;
+  padding: 0px
+  margin: 0px;
 }
 .footer {
   font-family: Roboto Condensed, sans-serif;
@@ -435,28 +437,34 @@ padding-left: 16px;
   .infoside {
     display: flex;
     width: 100%;
-    background-color: pink;
     margin: 0px;
     padding: 0px;
   }
   .contentdiv {
     width: 100%;
   }
-  .orientation {
+  .orientation, .campus, .guest {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: lightblue;
+    padding: 0px;
+    margin-bottom: 32px;
   }
 .pcimg{
     display: none;
   }
   .mobileimg {
     display: block;
+    padding: 16px 16px;
 
+  }
+  .infoside .mobile {
+    display: block;
+    margin: 0px;
   }
   .img {
     width: 100%;
+    padding: 0px;
   }
   .mobileimg img{
     margin: 0px;
@@ -464,6 +472,91 @@ padding-left: 16px;
   }
   .contentdiv {
     display: block;
+    padding-left: 16px;
+    padding-top: 0px;
+
   }
+  .contentdiv p, span {
+    padding-left: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+
+  }
+  .contentdiv .title {
+    font-size: 1.5rem;
+  }
+  /*LEARNING MOBILE CODE*/
+  .learning {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .learning .lbimg, .text, p {
+    display: none;
+  }
+  .learning-block{
+    margin-left: 0px;
+    width: 100%;
+    background-color: white;
+    padding-left: 0px;
+    margin-bottom: 8px;
+
+    }
+    .learning-block span{
+    font-size: 1.5rem;
+    }
+    .learning-main {
+      display: flex;
+      width: 100%;
+      margin: 16px 16px 32px 16px;
+      flex-direction: column;
+    }
+    .learning {
+      display: flex;
+      width: 100%;
+    }
+    .learning .title {
+      width: 100%;
+    }
+    .lbcontent {
+      display: flex;
+      width: 100%;
+    }
+    /*THESIS MOBILE CODE*/
+    .thesis {
+      display: flex;
+      width:100;
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+    }
+    .content-container {
+      display: none;
+      margin: 0px;
+      padding: 0px;
+    }
+    .vid-content span, p{
+      display: none;
+    }
+    .vid-content {
+      padding: 0px;
+      margin: 0px;
+
+    }
+    .video-section{
+      padding: 16px 0px 24px 0px;
+      width: 100%;
+      margin: 0px;
+      background-color: lightgrey;
+    }
+    /*FOOTER MOBILE CODE*/
+    .footer .links {
+      display: none;
+      margin: 16px 0px;
+    }
+
+
 
 }
